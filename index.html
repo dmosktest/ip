@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#17110c" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Узнать мой IP — внешний адрес и страна</title>
+    <meta
+      name="description"
+      content="Мгновенно узнайте внешний IP и страну. Скопируйте одним кликом. Без регистрации."
+    />
+    <link rel="canonical" href="https://ip.dmosk.net/ru/" />
+    <link rel="alternate" hreflang="ru" href="https://ip.dmosk.net/ru/" />
+    <link rel="alternate" hreflang="en" href="https://ip.dmosk.net/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://ip.dmosk.net/en/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ip.dmosk.net/ru/" />
+    <meta property="og:title" content="Узнать мой IP — внешний адрес и страна" />
+    <meta
+      property="og:description"
+      content="Мгновенно узнайте внешний IP и страну. Скопируйте одним кликом. Без регистрации."
+    />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:image" content="https://ip.dmosk.net/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;600&display=optional"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json" id="ld-app"></script>
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="topbar">
+        <p class="brand">dmosk / ip</p>
+        <div class="topbar-actions">
+          <a
+            class="github-link"
+            href="https://github.com/dmosktest/ip"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <svg class="github-icon" viewBox="0 0 16 16" width="20" height="20" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <details class="lang">
+            <summary class="lang-summary" aria-label="Язык сайта">
+              <img class="lang-flag" src="/flags/1f1f7-1f1fa.png" alt="" width="20" height="20" decoding="async" aria-hidden="true" />
+              <span class="lang-current-name">Русский</span>
+            </summary>
+            <div class="lang-menu" role="list">
+              <a href="/ru/" class="lang-option active" id="lang-ru" data-locale="ru" hreflang="ru" lang="ru" aria-current="page"><img class="lang-flag" src="/flags/1f1f7-1f1fa.png" alt="" width="20" height="20" decoding="async" aria-hidden="true" /><span class="lang-name">Русский</span></a>
+              <a href="/en/" class="lang-option" id="lang-en" data-locale="en" hreflang="en" lang="en" aria-current="false"><img class="lang-flag" src="/flags/1f1ec-1f1e7.png" alt="" width="20" height="20" decoding="async" aria-hidden="true" /><span class="lang-name">English</span></a>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <h1 id="heading">Ваш IP-адрес</h1>
+      <p class="lead" id="lead">
+        Это внешний адрес, который видят сайты при вашем подключении. Скопируйте его или посмотрите страну ниже.
+      </p>
+
+      <noscript>
+        <p class="noscript" data-i18n="noscript">
+          Включите JavaScript, чтобы увидеть ваш IP-адрес.
+        </p>
+      </noscript>
+
+      <div class="ip-block">
+        <p class="ip" id="ip" aria-live="polite" aria-label="Ваш IP-адрес">…</p>
+        <button type="button" class="btn btn-primary" id="copy" disabled aria-label="Скопировать IP-адрес">
+          Скопировать
+        </button>
+      </div>
+      <p class="status" id="status" aria-live="polite"></p>
+      <p class="country">
+        <img class="country-flag" id="country-flag" alt="" width="28" height="21" decoding="async" hidden />
+        <span id="country-value">…</span>
+      </p>
+      <p class="error" id="error" role="alert" aria-live="polite"></p>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
