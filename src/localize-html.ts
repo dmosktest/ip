@@ -1,6 +1,11 @@
 import { t } from "./i18n";
 import { NOT_FOUND_COPY } from "./notfound-messages";
-import { buildAppJsonLd, getSeoCopy } from "./seo-messages";
+import {
+  buildAppJsonLd,
+  buildFaqJsonLd,
+  getSeoCopy,
+  renderSeoHtml,
+} from "./seo-content";
 import {
   ALLOW_INDEX,
   LOCALES,
@@ -136,6 +141,7 @@ export function localizeIndexHtml(html: string, locale: Locale): string {
     /(<p class=["']noscript["'][^>]*>)([\s\S]*?)(<\/p>)/i,
     `$1${t(locale, "noscript")}$3`,
   );
+  out = replaceTagContent(out, "article", "seo-root", renderSeoHtml(locale));
   out = replaceTagContent(out, "button", "copy", t(locale, "copy"));
   out = out.replace(
     /(<button[^>]*\bid=["']copy["'][^>]*aria-label=)(["'])(.*?)(\2)/i,
@@ -153,6 +159,10 @@ export function localizeIndexHtml(html: string, locale: Locale): string {
   out = out.replace(
     /<script type=["']application\/ld\+json["'] id=["']ld-app["']>[\s\S]*?<\/script>/i,
     `<script type="application/ld+json" id="ld-app">${JSON.stringify(buildAppJsonLd(locale))}</script>`,
+  );
+  out = out.replace(
+    /<script type=["']application\/ld\+json["'] id=["']ld-faq["']>[\s\S]*?<\/script>/i,
+    `<script type="application/ld+json" id="ld-faq">${JSON.stringify(buildFaqJsonLd(locale))}</script>`,
   );
 
   return out;
