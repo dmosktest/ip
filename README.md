@@ -1,8 +1,9 @@
-﻿# ip
+# ip
 
 Shows your public IP address and country. The browser asks a small local API; country comes from a GeoIP header when the reverse proxy provides one.
 
 **Version:** `1.0.3`  
+**License:** [MIT](LICENSE)
 **Live:** https://ip.dmosk.net
 
 ## Stack
