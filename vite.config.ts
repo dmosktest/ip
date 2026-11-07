@@ -59,8 +59,18 @@ function meApiPlugin(): Plugin {
     const curl = typeof uaStr === "string" && /curl\//i.test(uaStr);
     res.statusCode = 200;
     res.setHeader("Cache-Control", "no-store");
+    const country =
+      typeof geoStr === "string" ? geoStr.trim().toUpperCase() : "";
     if (curl) {
-      const plain = `${ip}\n`;
+      let name = "";
+      if (country && country !== "NULL") {
+        try {
+          name = new Intl.DisplayNames(["en"], { type: "region" }).of(country) || "";
+        } catch {
+          name = "";
+        }
+      }
+      const plain = name ? `${ip}\n${name}\n` : `${ip}\n`;
       res.setHeader("Content-Type", "text/plain; charset=utf-8");
       res.end(plain);
       return;
@@ -69,7 +79,7 @@ function meApiPlugin(): Plugin {
     res.end(
       JSON.stringify({
         ip,
-        country: typeof geoStr === "string" ? geoStr.trim().toUpperCase() : "",
+        country,
       }),
     );
   };

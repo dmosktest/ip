@@ -8,7 +8,7 @@ Live: [https://ip.dmosk.net/](https://ip.dmosk.net/)
 
 ## curl
 
-When the `User-Agent` contains `curl/`, the response is plain text with just the IP:
+When the `User-Agent` contains `curl/`, the response is plain text: IP on the first line, English country name on the second (when GeoIP knows it):
 
 ```bash
 curl http://ip.dmosk.net/

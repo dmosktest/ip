@@ -93,6 +93,17 @@ function countryCode(req) {
   return code;
 }
 
+function countryNameEn(code) {
+  if (!code) return "";
+  try {
+    const names = new Intl.DisplayNames(["en"], { type: "region" });
+    const name = names.of(code);
+    return typeof name === "string" ? name : "";
+  } catch {
+    return "";
+  }
+}
+
 const server = http.createServer((req, res) => {
   const url = new URL(req.url || "/", `http://${req.headers.host || "localhost"}`);
   const pathName = url.pathname.replace(/\/+$/, "") || "/";
@@ -108,13 +119,15 @@ const server = http.createServer((req, res) => {
       return;
     }
     const ip = clientIp(req);
+    const country = countryCode(req);
     if (isCurl(req)) {
-      sendPlain(res, 200, ip);
+      const name = countryNameEn(country);
+      sendPlain(res, 200, name ? `${ip}\n${name}` : ip);
       return;
     }
     sendJson(res, 200, {
       ip,
-      country: countryCode(req),
+      country,
     });
     return;
   }
