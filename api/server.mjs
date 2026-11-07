@@ -13,6 +13,21 @@ function sendJson(res, status, body) {
   res.end(payload);
 }
 
+function sendPlain(res, status, text) {
+  const payload = text.endsWith("\n") ? text : `${text}\n`;
+  res.writeHead(status, {
+    "Content-Type": "text/plain; charset=utf-8",
+    "Cache-Control": "no-store",
+    "Content-Length": Buffer.byteLength(payload),
+  });
+  res.end(payload);
+}
+
+function isCurl(req) {
+  const ua = req.headers["user-agent"];
+  return typeof ua === "string" && /curl\//i.test(ua);
+}
+
 function normalizeIp(raw) {
   if (!raw) return "";
   let ip = String(raw).trim();
@@ -92,8 +107,13 @@ const server = http.createServer((req, res) => {
       sendJson(res, 405, { error: "method_not_allowed" });
       return;
     }
+    const ip = clientIp(req);
+    if (isCurl(req)) {
+      sendPlain(res, 200, ip);
+      return;
+    }
     sendJson(res, 200, {
-      ip: clientIp(req),
+      ip,
       country: countryCode(req),
     });
     return;

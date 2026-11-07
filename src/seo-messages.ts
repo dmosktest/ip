@@ -143,6 +143,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>Страна с флагом.</strong> Определение по GeoIP-базе помогает быстро проверить, откуда вас «видят» сайты.",
       "<strong>Сравнение после смены сети.</strong> Обновите страницу после перехода с Wi‑Fi на мобильный интернет или обратно — адрес и страна могут измениться.",
       "<strong>Лёгкая страница.</strong> Работает на компьютере и смартфоне, доступна на многих языках.",
+      "<strong>curl из терминала.</strong> <code>curl http://ip.dmosk.net/</code> или HTTPS — ответ одной строкой с IP, без лишней разметки.",
     ],
     howTitle: "Как узнать свой IP-адрес",
     howSteps: [
@@ -150,6 +151,7 @@ const bodies: Record<Locale, SeoBody> = {
       "Дождитесь появления вашего внешнего IP-адреса и страны.",
       "Нажмите «Скопировать», чтобы сохранить адрес в буфер обмена.",
       "Переключитесь между Wi‑Fi и мобильной сетью и обновите страницу, чтобы сравнить результат.",
+      "Или выполните в терминале <code>curl http://ip.dmosk.net/</code> — адрес придёт обычным текстом.",
     ],
     strongTitle: "Что такое внешний IP и как его защитить",
     strongLead:
@@ -169,6 +171,7 @@ const bodies: Record<Locale, SeoBody> = {
       "настройка удалённого доступа, RDP и панелей хостинга;",
       "диагностика сети и обращение в поддержку провайдера;",
       "проверка геолокации для доступа к региональным сервисам.",
+      "быстрая проверка из терминала через curl;",
     ],
     faqTitle: "Частые вопросы",
     faq: [
@@ -183,6 +186,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "Кто видит мой IP-адрес?", a: "Любой сайт или сервис, к которому вы подключаетесь, видит внешний адрес этого соединения. Эта страница лишь показывает вам тот же адрес." },
       { q: "Зачем сайтам мой IP?", a: "Он нужен для установления соединения. Кроме того, сайты используют его для региональных ограничений, защиты от ботов и статистики." },
       { q: "Что делать, если IP не определился?", a: "Отключите блокировщики и расширения, мешающие запросам, проверьте подключение к сети и обновите страницу." },
+      { q: "Можно ли узнать IP через curl?", a: "Да. Выполните <code>curl http://ip.dmosk.net/</code> или <code>curl https://ip.dmosk.net/</code> — в ответе будет только IP текстом. Для curl HTTP на порт 80 без редиректа на HTTPS." },
     ],
   },
   en: {
@@ -196,6 +200,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>Country with a flag.</strong> A GeoIP lookup shows where websites think you are connecting from.",
       "<strong>Compare after a network change.</strong> Reload the page after switching between Wi‑Fi and mobile data to see if the address and country update.",
       "<strong>Lightweight page.</strong> Works on desktop and mobile and is available in many languages.",
+      "<strong>curl from the terminal.</strong> <code>curl http://ip.dmosk.net/</code> or HTTPS — a one-line IP response with no extra markup.",
     ],
     howTitle: "How to find your IP address",
     howSteps: [
@@ -203,6 +208,7 @@ const bodies: Record<Locale, SeoBody> = {
       "Wait for your public IP address and country to appear.",
       "Press Copy to save the address to the clipboard.",
       "Switch between Wi‑Fi and mobile data, then reload the page to compare the result.",
+      "Or run <code>curl http://ip.dmosk.net/</code> in a terminal — the address comes back as plain text.",
     ],
     strongTitle: "What a public IP is and how to protect it",
     strongLead:
@@ -222,6 +228,7 @@ const bodies: Record<Locale, SeoBody> = {
       "setting up remote access, RDP and hosting panels;",
       "network diagnostics and contacting your provider's support;",
       "checking your location for region-restricted services.",
+      "a quick check from the terminal with curl;",
     ],
     faqTitle: "Frequently asked questions",
     faq: [
@@ -236,6 +243,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "Who can see my IP address?", a: "Any site or service you connect to sees the public address of that connection. This page simply shows you the same address." },
       { q: "Why do websites need my IP?", a: "It is required to establish the connection. Sites also use it for regional rules, bot protection and statistics." },
       { q: "What if my IP is not detected?", a: "Disable ad blockers or extensions that block requests, check your network connection and reload the page." },
+      { q: "Can I look up my IP with curl?", a: "Yes. Run <code>curl http://ip.dmosk.net/</code> or <code>curl https://ip.dmosk.net/</code> — the response is plain text with just the IP. For curl, HTTP on port 80 has no redirect to HTTPS." },
     ],
   },
   zh: {
@@ -249,6 +257,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>国家附国旗。</strong>通过 GeoIP 数据库快速了解网站眼中您所在的地区。",
       "<strong>更换网络后对比。</strong>在 Wi‑Fi 与移动数据之间切换后刷新页面，查看地址和国家是否更新。",
       "<strong>页面轻量。</strong>电脑和手机均可使用，并支持多种语言。",
+      "<strong>终端 curl。</strong> <code>curl http://ip.dmosk.net/</code> 或 HTTPS —— 一行 IP，无多余标记。",
     ],
     howTitle: "如何查看自己的 IP 地址",
     howSteps: [
@@ -256,6 +265,7 @@ const bodies: Record<Locale, SeoBody> = {
       "等待公网 IP 地址和国家/地区显示。",
       "点击“复制”，将地址保存到剪贴板。",
       "在 Wi‑Fi 与移动数据之间切换后刷新页面，对比结果。",
+      "或在终端运行 <code>curl http://ip.dmosk.net/</code> —— 地址以纯文本返回。",
     ],
     strongTitle: "什么是公网 IP 以及如何保护它",
     strongLead:
@@ -275,6 +285,7 @@ const bodies: Record<Locale, SeoBody> = {
       "配置远程访问、RDP 和主机控制面板；",
       "网络诊断以及联系运营商技术支持；",
       "检查所在地区以访问有地域限制的服务。",
+      "用 curl 在终端快速查询；",
     ],
     faqTitle: "常见问题",
     faq: [
@@ -287,6 +298,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "IPv4 和 IPv6 是什么？", a: "它们是协议的两个版本。IPv4 形如 203.0.113.7，IPv6 形如 2001:db8::1，您看到哪种取决于运营商和网络设置。" },
       { q: "这个服务免费吗？", a: "是的，免费、无需注册，查询次数不限。" },
       { q: "谁能看到我的 IP？", a: "您连接的任何网站或服务都会看到该连接的公网地址。本页只是把同一个地址展示给您。" },
+      { q: "可以用 curl 查询 IP 吗？", a: "可以。运行 <code>curl http://ip.dmosk.net/</code> 或 <code>curl https://ip.dmosk.net/</code>，响应仅为纯文本 IP。对 curl，80 端口的 HTTP 不会重定向到 HTTPS。" },
     ],
   },
   es: {
@@ -300,6 +312,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>País con bandera.</strong> La consulta GeoIP indica desde dónde creen los sitios que se conecta.",
       "<strong>Compare tras un cambio de red.</strong> Recargue la página después de pasar de Wi‑Fi a datos móviles o al revés para ver si cambian la dirección y el país.",
       "<strong>Página ligera.</strong> Funciona en ordenador y móvil y está disponible en muchos idiomas.",
+      "<strong>curl desde la terminal.</strong> <code>curl http://ip.dmosk.net/</code> o HTTPS: una línea con la IP, sin marcado extra.",
     ],
     howTitle: "Cómo saber su dirección IP",
     howSteps: [
@@ -307,6 +320,7 @@ const bodies: Record<Locale, SeoBody> = {
       "Espere a que aparezcan su IP pública y el país.",
       "Pulse Copiar para guardar la dirección en el portapapeles.",
       "Cambie entre Wi‑Fi y datos móviles y recargue la página para comparar.",
+      "O ejecute <code>curl http://ip.dmosk.net/</code> en una terminal: la dirección llega en texto plano.",
     ],
     strongTitle: "Qué es una IP pública y cómo protegerla",
     strongLead:
@@ -326,6 +340,7 @@ const bodies: Record<Locale, SeoBody> = {
       "configurar acceso remoto, RDP y paneles de hosting;",
       "diagnóstico de red y contacto con el soporte del proveedor;",
       "comprobar su ubicación para servicios con restricción regional.",
+      "comprobación rápida desde la terminal con curl;",
     ],
     faqTitle: "Preguntas frecuentes",
     faq: [
@@ -338,6 +353,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "¿Qué son IPv4 e IPv6?", a: "Son dos versiones del protocolo. IPv4 se ve como 203.0.113.7 e IPv6 como 2001:db8::1. Cuál vea depende de su proveedor y de la red." },
       { q: "¿El servicio es gratuito?", a: "Sí, es gratuito, sin registro y sin límite de consultas." },
       { q: "¿Quién puede ver mi dirección IP?", a: "Cualquier sitio o servicio al que se conecte ve la dirección pública de esa conexión. Esta página solo le muestra la misma dirección." },
+      { q: "¿Puedo consultar mi IP con curl?", a: "Sí. Ejecute <code>curl http://ip.dmosk.net/</code> o <code>curl https://ip.dmosk.net/</code>: la respuesta es solo la IP en texto. Con curl, HTTP en el puerto 80 no redirige a HTTPS." },
     ],
   },
   hi: {
@@ -351,6 +367,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>झंडे के साथ देश।</strong> GeoIP से पता चलता है कि वेबसाइटें आपको किस देश से जुड़ा मानती हैं।",
       "<strong>नेटवर्क बदलने के बाद तुलना करें।</strong> Wi‑Fi और मोबाइल डेटा के बीच स्विच करके पेज रीलोड करें और देखें कि पता व देश बदले या नहीं।",
       "<strong>हल्का पेज।</strong> कंप्यूटर और मोबाइल पर चलता है और कई भाषाओं में उपलब्ध है।",
+      "<strong>टर्मिनल से curl।</strong> <code>curl http://ip.dmosk.net/</code> या HTTPS — एक पंक्ति में IP, बिना अतिरिक्त मार्कअप।",
     ],
     howTitle: "अपना IP पता कैसे देखें",
     howSteps: [
@@ -358,6 +375,7 @@ const bodies: Record<Locale, SeoBody> = {
       "अपना पब्लिक IP और देश दिखने का इंतज़ार करें।",
       "पता क्लिपबोर्ड में रखने के लिए “कॉपी” दबाएँ।",
       "Wi‑Fi और मोबाइल डेटा के बीच स्विच करके पेज रीलोड करें और नतीजे की तुलना करें।",
+      "या टर्मिनल में <code>curl http://ip.dmosk.net/</code> चलाएँ — पता सादे पाठ के रूप में आएगा।",
     ],
     strongTitle: "पब्लिक IP क्या है और उसे कैसे सुरक्षित रखें",
     strongLead:
@@ -377,6 +395,7 @@ const bodies: Record<Locale, SeoBody> = {
       "रिमोट एक्सेस, RDP और होस्टिंग पैनल सेट करने में;",
       "नेटवर्क की समस्या जाँचने और प्रदाता के सपोर्ट से बात करने में;",
       "क्षेत्र-सीमित सेवाओं के लिए अपना स्थान जाँचने में।",
+      "curl से टर्मिनल में त्वरित जाँच;",
     ],
     faqTitle: "अक्सर पूछे जाने वाले सवाल",
     faq: [
@@ -389,6 +408,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "IPv4 और IPv6 क्या हैं?", a: "ये प्रोटोकॉल के दो संस्करण हैं। IPv4 जैसे 203.0.113.7 और IPv6 जैसे 2001:db8::1। कौन-सा दिखेगा, यह आपके प्रदाता और नेटवर्क पर निर्भर है।" },
       { q: "क्या यह सेवा मुफ़्त है?", a: "हाँ, यह मुफ़्त है, साइन अप नहीं चाहिए और जाँच की कोई सीमा नहीं।" },
       { q: "मेरा IP कौन देख सकता है?", a: "जिस भी साइट या सेवा से आप जुड़ते हैं, वह उस कनेक्शन का सार्वजनिक पता देखती है। यह पेज बस वही पता आपको दिखाता है।" },
+      { q: "क्या curl से IP देखा जा सकता है?", a: "हाँ। <code>curl http://ip.dmosk.net/</code> या <code>curl https://ip.dmosk.net/</code> चलाएँ — जवाब में केवल सादा IP टेक्स्ट मिलेगा। curl के लिए पोर्ट 80 पर HTTP को HTTPS पर रीडायरेक्ट नहीं किया जाता।" },
     ],
   },
   ar: {
@@ -402,6 +422,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>البلد مع العلم.</strong> يوضح بحث GeoIP من أي بلد تظن المواقع أنك تتصل.",
       "<strong>قارن بعد تغيير الشبكة.</strong> أعد تحميل الصفحة بعد التبديل بين Wi‑Fi وبيانات الجوال لترى إن تغيّر العنوان والبلد.",
       "<strong>صفحة خفيفة.</strong> تعمل على الحاسوب والهاتف وتتوفر بلغات عديدة.",
+      "<strong>curl من الطرفية.</strong> <code>curl http://ip.dmosk.net/</code> أو HTTPS — سطر واحد بعنوان IP دون ترميز إضافي.",
     ],
     howTitle: "كيف تعرف عنوان IP الخاص بك",
     howSteps: [
@@ -409,6 +430,7 @@ const bodies: Record<Locale, SeoBody> = {
       "انتظر ظهور عنوان IP العام والبلد.",
       "اضغط «نسخ» لحفظ العنوان في الحافظة.",
       "بدّل بين Wi‑Fi وبيانات الجوال ثم أعد تحميل الصفحة لمقارنة النتيجة.",
+      "أو نفّذ <code>curl http://ip.dmosk.net/</code> في الطرفية — يصل العنوان كنص عادي.",
     ],
     strongTitle: "ما هو عنوان IP العام وكيف تحميه",
     strongLead:
@@ -428,6 +450,7 @@ const bodies: Record<Locale, SeoBody> = {
       "إعداد الوصول عن بُعد وRDP ولوحات الاستضافة؛",
       "تشخيص الشبكة والتواصل مع دعم المزود؛",
       "التحقق من موقعك للخدمات المقيّدة إقليمياً.",
+      "فحص سريع من الطرفية عبر curl;",
     ],
     faqTitle: "الأسئلة الشائعة",
     faq: [
@@ -440,6 +463,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "ما هما IPv4 وIPv6؟", a: "إصداران من البروتوكول؛ IPv4 مثل 203.0.113.7 وIPv6 مثل 2001:db8::1. يعتمد ما تراه على مزودك وإعدادات الشبكة." },
       { q: "هل الخدمة مجانية؟", a: "نعم، مجانية وبدون تسجيل ودون حد لعدد مرات التحقق." },
       { q: "من يرى عنوان IP الخاص بي؟", a: "أي موقع أو خدمة تتصل بها ترى العنوان العام لذلك الاتصال. هذه الصفحة تعرض لك العنوان نفسه فقط." },
+      { q: "هل يمكن معرفة IP عبر curl؟", a: "نعم. نفّذ <code>curl http://ip.dmosk.net/</code> أو <code>curl https://ip.dmosk.net/</code> — الرد نص عادي بعنوان IP فقط. مع curl لا يُعاد توجيه HTTP على المنفذ 80 إلى HTTPS." },
     ],
   },
   bn: {
@@ -453,6 +477,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>পতাকাসহ দেশ।</strong> GeoIP থেকে বোঝা যায় ওয়েবসাইট আপনাকে কোন দেশ থেকে সংযুক্ত ভাবছে।",
       "<strong>নেটওয়ার্ক বদলানোর পর তুলনা।</strong> Wi‑Fi ও মোবাইল ডেটার মধ্যে স্যুইচ করে পেজ রিলোড করুন, ঠিকানা ও দেশ বদলেছে কি না দেখুন।",
       "<strong>হালকা পেজ।</strong> কম্পিউটার ও মোবাইলে চলে এবং অনেক ভাষায় পাওয়া যায়।",
+      "<strong>টার্মিনাল থেকে curl।</strong> <code>curl http://ip.dmosk.net/</code> বা HTTPS — এক লাইনে IP, অতিরিক্ত মার্কআপ নেই।",
     ],
     howTitle: "নিজের IP ঠিকানা কীভাবে জানবেন",
     howSteps: [
@@ -460,6 +485,7 @@ const bodies: Record<Locale, SeoBody> = {
       "আপনার পাবলিক IP ও দেশ দেখা না যাওয়া পর্যন্ত অপেক্ষা করুন।",
       "ঠিকানা ক্লিপবোর্ডে রাখতে “কপি” চাপুন।",
       "Wi‑Fi ও মোবাইল ডেটার মধ্যে স্যুইচ করে পেজ রিলোড করে ফল মিলিয়ে দেখুন।",
+      "অথবা টার্মিনালে <code>curl http://ip.dmosk.net/</code> চালান — ঠিকানা সাধারণ টেক্সটে আসবে।",
     ],
     strongTitle: "পাবলিক IP কী এবং কীভাবে সুরক্ষিত রাখবেন",
     strongLead:
@@ -479,6 +505,7 @@ const bodies: Record<Locale, SeoBody> = {
       "রিমোট অ্যাক্সেস, RDP ও হোস্টিং প্যানেল সেটআপ;",
       "নেটওয়ার্ক সমস্যা নির্ণয় ও প্রদানকারীর সাপোর্টে যোগাযোগ;",
       "অঞ্চলভিত্তিক সেবার জন্য নিজের অবস্থান যাচাই।",
+      "curl দিয়ে টার্মিনাল থেকে দ্রুত যাচাই;",
     ],
     faqTitle: "সচরাচর জিজ্ঞাসা",
     faq: [
@@ -491,6 +518,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "IPv4 ও IPv6 কী?", a: "এগুলো প্রোটোকলের দুটি সংস্করণ। IPv4 দেখতে 203.0.113.7, IPv6 দেখতে 2001:db8::1। কোনটি দেখবেন তা প্রদানকারী ও নেটওয়ার্কের ওপর নির্ভর করে।" },
       { q: "সেবাটি কি বিনামূল্যে?", a: "হ্যাঁ, বিনামূল্যে, সাইন আপ ছাড়া এবং যাচাইয়ের কোনো সীমা নেই।" },
       { q: "আমার IP কে দেখতে পারে?", a: "আপনি যে সাইট বা সেবায় যুক্ত হন, সেই সংযোগের পাবলিক ঠিকানা তারা দেখে। এই পেজ শুধু একই ঠিকানা আপনাকে দেখায়।" },
+      { q: "curl দিয়ে কি IP জানা যায়?", a: "হ্যাঁ। <code>curl http://ip.dmosk.net/</code> বা <code>curl https://ip.dmosk.net/</code> চালান — উত্তরে শুধু সাধারণ টেক্সটে IP থাকবে। curl-এর জন্য পোর্ট 80-এ HTTP HTTPS-এ রিডাইরেক্ট হয় না।" },
     ],
   },
   pt: {
@@ -504,6 +532,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>País com bandeira.</strong> A consulta GeoIP indica de onde os sites julgam que se liga.",
       "<strong>Compare após mudar de rede.</strong> Recarregue a página depois de alternar entre Wi‑Fi e dados móveis para ver se o endereço e o país mudam.",
       "<strong>Página leve.</strong> Funciona em computador e telemóvel e está disponível em vários idiomas.",
+      "<strong>curl no terminal.</strong> <code>curl http://ip.dmosk.net/</code> ou HTTPS — uma linha com o IP, sem marcação extra.",
     ],
     howTitle: "Como saber o seu endereço IP",
     howSteps: [
@@ -511,6 +540,7 @@ const bodies: Record<Locale, SeoBody> = {
       "Aguarde o aparecimento do seu IP público e do país.",
       "Prima Copiar para guardar o endereço na área de transferência.",
       "Alterne entre Wi‑Fi e dados móveis e recarregue a página para comparar.",
+      "Ou execute <code>curl http://ip.dmosk.net/</code> no terminal — o endereço vem em texto simples.",
     ],
     strongTitle: "O que é um IP público e como o proteger",
     strongLead:
@@ -530,6 +560,7 @@ const bodies: Record<Locale, SeoBody> = {
       "configurar acesso remoto, RDP e painéis de alojamento;",
       "diagnóstico de rede e contacto com o suporte do fornecedor;",
       "confirmar a localização para serviços com restrição regional.",
+      "verificação rápida no terminal com curl;",
     ],
     faqTitle: "Perguntas frequentes",
     faq: [
@@ -542,6 +573,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "O que são IPv4 e IPv6?", a: "São duas versões do protocolo. O IPv4 é do tipo 203.0.113.7 e o IPv6 do tipo 2001:db8::1. O que vê depende do fornecedor e da rede." },
       { q: "O serviço é gratuito?", a: "Sim, é gratuito, sem registo e sem limite de consultas." },
       { q: "Quem pode ver o meu IP?", a: "Qualquer site ou serviço a que se ligue vê o endereço público dessa ligação. Esta página apenas lhe mostra o mesmo endereço." },
+      { q: "Posso ver o meu IP com curl?", a: "Sim. Execute <code>curl http://ip.dmosk.net/</code> ou <code>curl https://ip.dmosk.net/</code> — a resposta é só o IP em texto. Com curl, HTTP na porta 80 não redireciona para HTTPS." },
     ],
   },
   fr: {
@@ -555,6 +587,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>Pays avec drapeau.</strong> La recherche GeoIP indique d'où les sites pensent que vous vous connectez.",
       "<strong>Comparez après un changement de réseau.</strong> Rechargez la page après être passé du Wi‑Fi aux données mobiles (ou l'inverse) pour voir si l'adresse et le pays changent.",
       "<strong>Page légère.</strong> Fonctionne sur ordinateur et mobile, disponible en de nombreuses langues.",
+      "<strong>curl depuis le terminal.</strong> <code>curl http://ip.dmosk.net/</code> ou HTTPS — une ligne avec l’IP, sans balisage superflu.",
     ],
     howTitle: "Comment connaître votre adresse IP",
     howSteps: [
@@ -562,6 +595,7 @@ const bodies: Record<Locale, SeoBody> = {
       "Attendez l'affichage de votre IP publique et du pays.",
       "Appuyez sur Copier pour enregistrer l'adresse dans le presse-papiers.",
       "Passez du Wi‑Fi aux données mobiles (ou l'inverse) et rechargez la page pour comparer.",
+      "Ou lancez <code>curl http://ip.dmosk.net/</code> dans un terminal — l’adresse revient en texte brut.",
     ],
     strongTitle: "Qu'est-ce qu'une IP publique et comment la protéger",
     strongLead:
@@ -581,6 +615,7 @@ const bodies: Record<Locale, SeoBody> = {
       "configurer l'accès à distance, RDP et les panneaux d'hébergement ;",
       "diagnostic réseau et contact avec le support du fournisseur ;",
       "vérifier votre localisation pour les services restreints par région.",
+      "vérification rapide depuis le terminal avec curl ;",
     ],
     faqTitle: "Questions fréquentes",
     faq: [
@@ -593,6 +628,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "Que sont IPv4 et IPv6 ?", a: "Ce sont deux versions du protocole. IPv4 ressemble à 203.0.113.7 et IPv6 à 2001:db8::1. Celle que vous voyez dépend de votre fournisseur et du réseau." },
       { q: "Le service est-il gratuit ?", a: "Oui, il est gratuit, sans inscription et sans limite de vérifications." },
       { q: "Qui peut voir mon adresse IP ?", a: "Tout site ou service auquel vous vous connectez voit l'adresse publique de cette connexion. Cette page vous montre simplement la même adresse." },
+      { q: "Puis-je connaître mon IP avec curl ?", a: "Oui. Lancez <code>curl http://ip.dmosk.net/</code> ou <code>curl https://ip.dmosk.net/</code> — la réponse est uniquement l’IP en texte. Pour curl, HTTP sur le port 80 n’est pas redirigé vers HTTPS." },
     ],
   },
   de: {
@@ -606,6 +642,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>Land mit Flagge.</strong> Die GeoIP-Abfrage zeigt, von wo Websites Ihre Verbindung vermuten.",
       "<strong>Nach Netzwechsel vergleichen.</strong> Laden Sie die Seite neu, nachdem Sie zwischen WLAN und Mobilfunk gewechselt haben, um zu sehen, ob sich Adresse und Land ändern.",
       "<strong>Schlanke Seite.</strong> Funktioniert am Computer und Smartphone und in vielen Sprachen.",
+      "<strong>curl im Terminal.</strong> <code>curl http://ip.dmosk.net/</code> oder HTTPS — eine Zeile mit der IP, ohne Extra-Markup.",
     ],
     howTitle: "So finden Sie Ihre IP-Adresse",
     howSteps: [
@@ -613,6 +650,7 @@ const bodies: Record<Locale, SeoBody> = {
       "Warten Sie, bis Ihre öffentliche IP und das Land erscheinen.",
       "Klicken Sie auf Kopieren, um die Adresse in die Zwischenablage zu legen.",
       "Wechseln Sie zwischen WLAN und Mobilfunk und laden Sie die Seite neu, um zu vergleichen.",
+      "Oder führen Sie im Terminal <code>curl http://ip.dmosk.net/</code> aus — die Adresse kommt als Klartext.",
     ],
     strongTitle: "Was eine öffentliche IP ist und wie Sie sie schützen",
     strongLead:
@@ -632,6 +670,7 @@ const bodies: Record<Locale, SeoBody> = {
       "Fernzugriff, RDP und Hosting-Panels einrichten;",
       "Netzwerkdiagnose und Kontakt zum Provider-Support;",
       "Standort für regional beschränkte Dienste prüfen.",
+      "schneller Check im Terminal mit curl;",
     ],
     faqTitle: "Häufige Fragen",
     faq: [
@@ -644,6 +683,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "Was sind IPv4 und IPv6?", a: "Zwei Versionen des Protokolls. IPv4 sieht aus wie 203.0.113.7, IPv6 wie 2001:db8::1. Was Sie sehen, hängt von Provider und Netzwerk ab." },
       { q: "Ist der Dienst kostenlos?", a: "Ja, er ist kostenlos, ohne Anmeldung und ohne Begrenzung der Abfragen." },
       { q: "Wer kann meine IP-Adresse sehen?", a: "Jede Website oder jeder Dienst, zu dem Sie verbinden, sieht die öffentliche Adresse dieser Verbindung. Diese Seite zeigt Ihnen dieselbe Adresse." },
+      { q: "Kann ich meine IP mit curl abfragen?", a: "Ja. Führen Sie <code>curl http://ip.dmosk.net/</code> oder <code>curl https://ip.dmosk.net/</code> aus — die Antwort ist nur die IP als Text. Für curl gibt es auf Port 80 keinen Redirect zu HTTPS." },
     ],
   },
   ja: {
@@ -657,6 +697,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>国旗付きの国表示。</strong>GeoIPにより、サイトからどの国に見えているかを確認できます。",
       "<strong>ネットワーク切替後の比較。</strong>Wi‑Fiとモバイルデータ切替後にページを再読み込みし、アドレスと国が変わるか確認できます。",
       "<strong>軽量なページ。</strong>PCでもスマホでも動作し、多言語に対応しています。",
+      "<strong>ターミナルの curl。</strong> <code>curl http://ip.dmosk.net/</code> または HTTPS — IP だけの1行、余分なマークアップなし。",
     ],
     howTitle: "自分のIPアドレスの調べ方",
     howSteps: [
@@ -664,6 +705,7 @@ const bodies: Record<Locale, SeoBody> = {
       "グローバルIPアドレスと国が表示されるまで待ちます。",
       "「コピー」を押してアドレスをクリップボードに保存します。",
       "Wi‑Fiとモバイルデータを切り替えてページを再読み込みし、結果を比べます。",
+      "またはターミナルで <code>curl http://ip.dmosk.net/</code> を実行 — アドレスがプレーンテキストで返ります。",
     ],
     strongTitle: "グローバルIPとは？守るためのポイント",
     strongLead:
@@ -683,6 +725,7 @@ const bodies: Record<Locale, SeoBody> = {
       "リモートアクセス、RDP、ホスティング管理画面の設定；",
       "ネットワークの切り分けとプロバイダーへの問い合わせ；",
       "地域制限のあるサービス向けの所在地確認。",
+      "curl でターミナルからすぐ確認;",
     ],
     faqTitle: "よくある質問",
     faq: [
@@ -695,6 +738,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "IPv4とIPv6とは？", a: "プロトコルの2つのバージョンです。IPv4は 203.0.113.7、IPv6は 2001:db8::1 のような形式で、どちらが表示されるかはプロバイダーと回線設定によります。" },
       { q: "サービスは無料ですか？", a: "はい。無料で、登録不要、確認回数の制限もありません。" },
       { q: "誰が私のIPを見られますか？", a: "接続先のサイトやサービスは、その接続の公開アドレスを見ます。このページは同じアドレスをあなたに見せるだけです。" },
+      { q: "curl で IP を調べられますか？", a: "はい。<code>curl http://ip.dmosk.net/</code> または <code>curl https://ip.dmosk.net/</code> を実行すると、プレーンテキストで IP だけが返ります。curl の場合、ポート 80 の HTTP は HTTPS にリダイレクトされません。" },
     ],
   },
   id: {
@@ -708,6 +752,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>Negara dengan bendera.</strong> Pencarian GeoIP menunjukkan dari mana situs mengira Anda terhubung.",
       "<strong>Bandingkan setelah ganti jaringan.</strong> Muat ulang halaman setelah beralih antara Wi‑Fi dan data seluler untuk melihat apakah alamat dan negara berubah.",
       "<strong>Halaman ringan.</strong> Berjalan di komputer dan ponsel serta tersedia dalam banyak bahasa.",
+      "<strong>curl dari terminal.</strong> <code>curl http://ip.dmosk.net/</code> atau HTTPS — satu baris IP tanpa markup ekstra.",
     ],
     howTitle: "Cara mengetahui alamat IP Anda",
     howSteps: [
@@ -715,6 +760,7 @@ const bodies: Record<Locale, SeoBody> = {
       "Tunggu IP publik dan negara Anda muncul.",
       "Tekan Salin untuk menyimpan alamat ke papan klip.",
       "Beralih antara Wi‑Fi dan data seluler lalu muat ulang halaman untuk membandingkan.",
+      "Atau jalankan <code>curl http://ip.dmosk.net/</code> di terminal — alamat kembali sebagai teks polos.",
     ],
     strongTitle: "Apa itu IP publik dan cara melindunginya",
     strongLead:
@@ -734,6 +780,7 @@ const bodies: Record<Locale, SeoBody> = {
       "mengatur akses jarak jauh, RDP, dan panel hosting;",
       "diagnosis jaringan dan menghubungi dukungan penyedia;",
       "memeriksa lokasi untuk layanan yang dibatasi wilayah.",
+      "cek cepat dari terminal dengan curl;",
     ],
     faqTitle: "Pertanyaan umum",
     faq: [
@@ -746,6 +793,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "Apa itu IPv4 dan IPv6?", a: "Dua versi protokol. IPv4 seperti 203.0.113.7 dan IPv6 seperti 2001:db8::1. Yang Anda lihat tergantung penyedia dan jaringan." },
       { q: "Apakah layanan ini gratis?", a: "Ya, gratis, tanpa daftar, dan tanpa batas pengecekan." },
       { q: "Siapa yang bisa melihat IP saya?", a: "Setiap situs atau layanan yang Anda hubungi melihat alamat publik koneksi itu. Halaman ini hanya menampilkan alamat yang sama kepada Anda." },
+      { q: "Bisakah saya cek IP dengan curl?", a: "Ya. Jalankan <code>curl http://ip.dmosk.net/</code> atau <code>curl https://ip.dmosk.net/</code> — responsnya hanya IP teks polos. Untuk curl, HTTP di port 80 tidak dialihkan ke HTTPS." },
     ],
   },
   pa: {
@@ -759,6 +807,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>ਝੰਡੇ ਸਮੇਤ ਦੇਸ਼।</strong> GeoIP ਨਾਲ ਪਤਾ ਲੱਗਦਾ ਹੈ ਕਿ ਸਾਈਟਾਂ ਤੁਹਾਨੂੰ ਕਿਸ ਦੇਸ਼ ਤੋਂ ਜੁੜਿਆ ਸਮਝਦੀਆਂ ਹਨ।",
       "<strong>ਨੈੱਟਵਰਕ ਬਦਲਣ ਤੋਂ ਬਾਅਦ ਤੁਲਨਾ।</strong> Wi‑Fi ਤੇ ਮੋਬਾਈਲ ਡਾਟਾ ਵਿਚਾਲੇ ਸਵਿੱਚ ਕਰਕੇ ਪੰਨਾ ਰੀਲੋਡ ਕਰੋ ਤੇ ਵੇਖੋ ਕਿ ਪਤਾ ਤੇ ਦੇਸ਼ ਬਦਲੇ ਜਾਂ ਨਹੀਂ।",
       "<strong>ਹਲਕਾ ਪੰਨਾ।</strong> ਕੰਪਿਊਟਰ ਤੇ ਮੋਬਾਈਲ ਉੱਤੇ ਚੱਲਦਾ ਹੈ ਅਤੇ ਕਈ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਹੈ।",
+      "<strong>ਟਰਮੀਨਲ ਤੋਂ curl।</strong> <code>curl http://ip.dmosk.net/</code> ਜਾਂ HTTPS — ਇੱਕ ਲਾਈਨ ਵਿੱਚ IP, ਬਿਨਾਂ ਵਾਧੂ ਮਾਰਕਅੱਪ।",
     ],
     howTitle: "ਆਪਣਾ IP ਪਤਾ ਕਿਵੇਂ ਵੇਖੀਏ",
     howSteps: [
@@ -766,6 +815,7 @@ const bodies: Record<Locale, SeoBody> = {
       "ਆਪਣਾ ਪਬਲਿਕ IP ਤੇ ਦੇਸ਼ ਦਿਸਣ ਤੱਕ ਉਡੀਕ ਕਰੋ।",
       "ਪਤਾ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਰੱਖਣ ਲਈ “ਕਾਪੀ” ਦਬਾਓ।",
       "Wi‑Fi ਤੇ ਮੋਬਾਈਲ ਡਾਟਾ ਵਿਚਾਲੇ ਸਵਿੱਚ ਕਰਕੇ ਪੰਨਾ ਰੀਲੋਡ ਕਰੋ ਤੇ ਨਤੀਜੇ ਦੀ ਤੁਲਨਾ ਕਰੋ।",
+      "ਜਾਂ ਟਰਮੀਨਲ ਵਿੱਚ <code>curl http://ip.dmosk.net/</code> ਚਲਾਓ — ਪਤਾ ਸਾਦੇ ਟੈਕਸਟ ਵਜੋਂ ਆਵੇਗਾ।",
     ],
     strongTitle: "ਪਬਲਿਕ IP ਕੀ ਹੈ ਅਤੇ ਇਸਨੂੰ ਕਿਵੇਂ ਸੁਰੱਖਿਅਤ ਰੱਖੀਏ",
     strongLead:
@@ -785,6 +835,7 @@ const bodies: Record<Locale, SeoBody> = {
       "ਰਿਮੋਟ ਐਕਸੈਸ, RDP ਅਤੇ ਹੋਸਟਿੰਗ ਪੈਨਲ ਸੈੱਟ ਕਰਨ ਲਈ;",
       "ਨੈੱਟਵਰਕ ਦੀ ਸਮੱਸਿਆ ਲੱਭਣ ਤੇ ਪ੍ਰਦਾਤਾ ਦੀ ਸਹਾਇਤਾ ਨਾਲ ਸੰਪਰਕ ਲਈ;",
       "ਖੇਤਰ-ਸੀਮਤ ਸੇਵਾਵਾਂ ਲਈ ਆਪਣਾ ਟਿਕਾਣਾ ਜਾਂਚਣ ਲਈ।",
+      "curl ਨਾਲ ਟਰਮੀਨਲ ਤੋਂ ਤੇਜ਼ ਜਾਂਚ;",
     ],
     faqTitle: "ਅਕਸਰ ਪੁੱਛੇ ਜਾਂਦੇ ਸਵਾਲ",
     faq: [
@@ -797,6 +848,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "IPv4 ਅਤੇ IPv6 ਕੀ ਹਨ?", a: "ਇਹ ਪ੍ਰੋਟੋਕੋਲ ਦੇ ਦੋ ਸੰਸਕਰਣ ਹਨ। IPv4 ਵੇਖਣ ਵਿੱਚ 203.0.113.7 ਵਰਗਾ ਤੇ IPv6 2001:db8::1 ਵਰਗਾ ਹੁੰਦਾ ਹੈ। ਕਿਹੜਾ ਦਿਸੇਗਾ, ਇਹ ਪ੍ਰਦਾਤਾ ਤੇ ਨੈੱਟਵਰਕ ’ਤੇ ਨਿਰਭਰ ਹੈ।" },
       { q: "ਕੀ ਇਹ ਸੇਵਾ ਮੁਫ਼ਤ ਹੈ?", a: "ਹਾਂ, ਇਹ ਮੁਫ਼ਤ ਹੈ, ਸਾਈਨ ਅੱਪ ਨਹੀਂ ਚਾਹੀਦਾ ਅਤੇ ਜਾਂਚਾਂ ਦੀ ਕੋਈ ਸੀਮਾ ਨਹੀਂ।" },
       { q: "ਮੇਰਾ IP ਕੌਣ ਵੇਖ ਸਕਦਾ ਹੈ?", a: "ਜਿਸ ਵੀ ਸਾਈਟ ਜਾਂ ਸੇਵਾ ਨਾਲ ਤੁਸੀਂ ਜੁੜਦੇ ਹੋ, ਉਹ ਉਸ ਕਨੈਕਸ਼ਨ ਦਾ ਪਬਲਿਕ ਪਤਾ ਵੇਖਦੀ ਹੈ। ਇਹ ਪੰਨਾ ਬਸ ਉਹੀ ਪਤਾ ਤੁਹਾਨੂੰ ਦਿਖਾਉਂਦਾ ਹੈ।" },
+      { q: "ਕੀ curl ਨਾਲ IP ਵੇਖਿਆ ਜਾ ਸਕਦਾ ਹੈ?", a: "ਹਾਂ। <code>curl http://ip.dmosk.net/</code> ਜਾਂ <code>curl https://ip.dmosk.net/</code> ਚਲਾਓ — ਜਵਾਬ ਵਿੱਚ ਸਿਰਫ਼ ਸਾਦਾ IP ਟੈਕਸਟ ਹੋਵੇਗਾ। curl ਲਈ ਪੋਰਟ 80 ਉੱਤੇ HTTP ਨੂੰ HTTPS ਵੱਲ ਰੀਡਾਇਰੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾਂਦਾ।" },
     ],
   },
   jv: {
@@ -810,6 +862,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>Negara karo gendera.</strong> Panelusuran GeoIP nuduhake saka ngendi situs ngira sampeyan nyambung.",
       "<strong>Bandhingna sawise ganti jaringan.</strong> Muat maneh kaca sawise ngalih antarane Wi‑Fi lan data seluler kanggo ndeleng apa alamat lan negara owah.",
       "<strong>Kaca entheng.</strong> Mlaku ing komputer lan HP lan ana ing pirang-pirang basa.",
+      "<strong>curl saka terminal.</strong> <code>curl http://ip.dmosk.net/</code> utawa HTTPS — siji baris IP tanpa markup ekstra.",
     ],
     howTitle: "Carane ngerti alamat IP sampeyan",
     howSteps: [
@@ -817,6 +870,7 @@ const bodies: Record<Locale, SeoBody> = {
       "Enteni nganti IP publik lan negara sampeyan katon.",
       "Pencet Salin kanggo nyimpen alamat ing clipboard.",
       "Ngaliha antarane Wi‑Fi lan data seluler banjur muat maneh kaca kanggo mbandhingake.",
+      "Utawa jalanken <code>curl http://ip.dmosk.net/</code> ing terminal — alamat bali minangka teks polos.",
     ],
     strongTitle: "Apa IP publik lan carane njagane",
     strongLead:
@@ -836,6 +890,7 @@ const bodies: Record<Locale, SeoBody> = {
       "nata akses jarak adoh, RDP, lan panel hosting;",
       "diagnosis jaringan lan ngubungi dhukungan panyedhiya;",
       "mriksa lokasi kanggo layanan sing diwatesi wilayah.",
+      "priksa cepet saka terminal nganggo curl;",
     ],
     faqTitle: "Pitakon sing kerep diajokake",
     faq: [
@@ -848,6 +903,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "Apa IPv4 lan IPv6?", a: "Rong versi protokol. IPv4 kaya 203.0.113.7 lan IPv6 kaya 2001:db8::1. Sing katon gumantung panyedhiya lan jaringan." },
       { q: "Apa layanan iki gratis?", a: "Ya, gratis, tanpa ndaftar, lan ora ana watesan pengecekan." },
       { q: "Sapa sing bisa ndeleng IP kula?", a: "Saben situs utawa layanan sing sampeyan sambungake ndeleng alamat publik sambungan iku. Kaca iki mung nuduhake alamat sing padha marang sampeyan." },
+      { q: "Apa isa ndeleng IP nganggo curl?", a: "Ya. Jalanken <code>curl http://ip.dmosk.net/</code> utawa <code>curl https://ip.dmosk.net/</code> — jawabane mung IP teks polos. Kanggo curl, HTTP ing port 80 ora dialihake menyang HTTPS." },
     ],
   },
   te: {
@@ -861,6 +917,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>జెండాతో దేశం.</strong> GeoIP ద్వారా సైట్లు మిమ్మల్ని ఏ దేశం నుండి కనెక్ట్ అయినట్లు భావిస్తాయో తెలుస్తుంది.",
       "<strong>నెట్‌వర్క్ మార్చిన తర్వాత పోల్చండి.</strong> Wi‑Fi, మొబైల్ డేటా మధ్య మారి పేజీని రీలోడ్ చేసి చిరునామా, దేశం మారాయో చూడండి.",
       "<strong>తేలికైన పేజీ.</strong> కంప్యూటర్, మొబైల్‌లో పనిచేస్తుంది, అనేక భాషల్లో అందుబాటులో ఉంది.",
+      "<strong>టెర్మినల్ నుంచి curl.</strong> <code>curl http://ip.dmosk.net/</code> లేదా HTTPS — ఒక పంక్తి IP, అదనపు మార్కప్ లేదు.",
     ],
     howTitle: "మీ IP చిరునామా ఎలా తెలుసుకోవాలి",
     howSteps: [
@@ -868,6 +925,7 @@ const bodies: Record<Locale, SeoBody> = {
       "మీ పబ్లిక్ IP, దేశం కనిపించే వరకు వేచి ఉండండి.",
       "చిరునామాను క్లిప్‌బోర్డ్‌లో ఉంచడానికి “కాపీ” నొక్కండి.",
       "Wi‑Fi, మొబైల్ డేటా మధ్య మారి పేజీని రీలోడ్ చేసి ఫలితాన్ని పోల్చండి.",
+      "లేదా టెర్మినల్‌లో <code>curl http://ip.dmosk.net/</code> నడపండి — చిరునామా సాదా టెక్స్ట్‌గా వస్తుంది.",
     ],
     strongTitle: "పబ్లిక్ IP అంటే ఏమిటి, దాన్ని ఎలా కాపాడుకోవాలి",
     strongLead:
@@ -887,6 +945,7 @@ const bodies: Record<Locale, SeoBody> = {
       "రిమోట్ యాక్సెస్, RDP, హోస్టింగ్ ప్యానెల్‌లు సెటప్ చేయడానికి;",
       "నెట్‌వర్క్ సమస్యల నిర్ధారణ, ప్రొవైడర్ సపోర్ట్‌ను సంప్రదించడానికి;",
       "ప్రాంత పరిమితి ఉన్న సేవల కోసం మీ లొకేషన్ చూడటానికి.",
+      "curlతో టెర్మినల్ నుంచి త్వరిత తనిఖీ;",
     ],
     faqTitle: "తరచుగా అడిగే ప్రశ్నలు",
     faq: [
@@ -899,6 +958,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "IPv4, IPv6 అంటే ఏమిటి?", a: "ఇవి ప్రోటోకాల్ రెండు వెర్షన్లు. IPv4 203.0.113.7 లాగా, IPv6 2001:db8::1 లాగా ఉంటుంది. ఏది కనిపిస్తుందో ప్రొవైడర్, నెట్‌వర్క్‌పై ఆధారపడి ఉంటుంది." },
       { q: "ఈ సేవ ఉచితమా?", a: "అవును, ఉచితం, సైన్ అప్ అవసరం లేదు, తనిఖీలకు పరిమితి లేదు." },
       { q: "నా IPని ఎవరు చూడగలరు?", a: "మీరు కనెక్ట్ అయ్యే ఏ సైట్ లేదా సేవైనా ఆ కనెక్షన్ పబ్లిక్ చిరునామాను చూస్తుంది. ఈ పేజీ అదే చిరునామాను మీకు చూపిస్తుంది." },
+      { q: "curl తో IP చూడవచ్చా?", a: "అవును. <code>curl http://ip.dmosk.net/</code> లేదా <code>curl https://ip.dmosk.net/</code> నడపండి — సమాధానం సాదా టెక్స్ట్ IP మాత్రమే. curl కోసం పోర్ట్ 80పై HTTPని HTTPSకి రీడైరెక్ట్ చేయం." },
     ],
   },
   tr: {
@@ -912,6 +972,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>Bayraklı ülke.</strong> GeoIP sorgusu, sitelerin sizi hangi ülkeden bağlanıyor sandığını gösterir.",
       "<strong>Ağ değişiminden sonra karşılaştırın.</strong> Wi‑Fi ile mobil veri arasında geçiş yaptıktan sonra sayfayı yenileyip adres ve ülkenin değişip değişmediğine bakın.",
       "<strong>Hafif sayfa.</strong> Bilgisayar ve telefonda çalışır, birçok dilde sunulur.",
+      "<strong>Terminalden curl.</strong> <code>curl http://ip.dmosk.net/</code> veya HTTPS — ekstra işaretleme olmadan tek satır IP.",
     ],
     howTitle: "IP adresinizi nasıl öğrenirsiniz",
     howSteps: [
@@ -919,6 +980,7 @@ const bodies: Record<Locale, SeoBody> = {
       "Genel IP adresiniz ve ülkeniz görünene kadar bekleyin.",
       "Adresi panoya kaydetmek için Kopyala'ya basın.",
       "Wi‑Fi ile mobil veri arasında geçiş yapın ve sonucu karşılaştırmak için sayfayı yenileyin.",
+      "Veya terminalde <code>curl http://ip.dmosk.net/</code> çalıştırın — adres düz metin olarak gelir.",
     ],
     strongTitle: "Genel IP nedir ve nasıl korunur",
     strongLead:
@@ -938,6 +1000,7 @@ const bodies: Record<Locale, SeoBody> = {
       "uzaktan erişim, RDP ve hosting panellerini ayarlamak;",
       "ağ sorunlarını teşhis etmek ve sağlayıcı desteğiyle görüşmek;",
       "bölgeye kısıtlı hizmetler için konumunuzu kontrol etmek.",
+      "curl ile terminalden hızlı kontrol;",
     ],
     faqTitle: "Sık sorulan sorular",
     faq: [
@@ -950,6 +1013,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "IPv4 ve IPv6 nedir?", a: "Protokolün iki sürümüdür. IPv4 203.0.113.7, IPv6 2001:db8::1 gibi görünür. Hangisini göreceğiniz sağlayıcınıza ve ağınıza bağlıdır." },
       { q: "Hizmet ücretsiz mi?", a: "Evet, ücretsizdir, kayıt gerektirmez ve sorgu sınırı yoktur." },
       { q: "IP adresimi kim görebilir?", a: "Bağlandığınız her site veya hizmet o bağlantının genel adresini görür. Bu sayfa size aynı adresi gösterir." },
+      { q: "IP’mi curl ile öğrenebilir miyim?", a: "Evet. <code>curl http://ip.dmosk.net/</code> veya <code>curl https://ip.dmosk.net/</code> çalıştırın — yanıt yalnızca düz metin IP olur. curl için 80. porttaki HTTP HTTPS’e yönlendirilmez." },
     ],
   },
   ko: {
@@ -963,6 +1027,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>국기와 함께 국가 표시.</strong> GeoIP로 웹사이트가 어느 나라에서 접속한다고 보는지 알 수 있습니다.",
       "<strong>네트워크 변경 후 비교.</strong> Wi‑Fi와 모바일 데이터를 전환한 뒤 페이지를 새로고침해 주소와 국가가 바뀌는지 확인하세요.",
       "<strong>가벼운 페이지.</strong> PC와 모바일에서 작동하며 여러 언어를 지원합니다.",
+      "<strong>터미널 curl.</strong> <code>curl http://ip.dmosk.net/</code> 또는 HTTPS — 추가 마크업 없이 IP 한 줄.",
     ],
     howTitle: "내 IP 주소 확인 방법",
     howSteps: [
@@ -970,6 +1035,7 @@ const bodies: Record<Locale, SeoBody> = {
       "공인 IP 주소와 국가가 나타날 때까지 기다립니다.",
       "복사를 눌러 주소를 클립보드에 저장합니다.",
       "Wi‑Fi와 모바일 데이터를 전환한 뒤 페이지를 새로고침해 결과를 비교합니다.",
+      "또는 터미널에서 <code>curl http://ip.dmosk.net/</code>를 실행하세요 — 주소가 일반 텍스트로 돌아옵니다.",
     ],
     strongTitle: "공인 IP란 무엇이며 어떻게 보호할까",
     strongLead:
@@ -989,6 +1055,7 @@ const bodies: Record<Locale, SeoBody> = {
       "원격 접속, RDP, 호스팅 패널 설정;",
       "네트워크 진단 및 제공업체 고객센터 문의;",
       "지역 제한 서비스를 위한 위치 확인.",
+      "curl로 터미널에서 빠른 확인;",
     ],
     faqTitle: "자주 묻는 질문",
     faq: [
@@ -1001,6 +1068,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "IPv4와 IPv6란?", a: "프로토콜의 두 버전입니다. IPv4는 203.0.113.7, IPv6는 2001:db8::1 같은 형태이며 어느 쪽이 보일지는 제공업체와 네트워크에 따라 다릅니다." },
       { q: "서비스는 무료인가요?", a: "네, 무료이며 가입이 필요 없고 조회 횟수 제한도 없습니다." },
       { q: "누가 내 IP를 볼 수 있나요?", a: "연결하는 모든 사이트나 서비스는 해당 연결의 공인 주소를 봅니다. 이 페이지는 같은 주소를 여러분에게 보여 줄 뿐입니다." },
+      { q: "curl로 IP를 확인할 수 있나요?", a: "네. <code>curl http://ip.dmosk.net/</code> 또는 <code>curl https://ip.dmosk.net/</code>를 실행하면 응답은 IP만 담긴 일반 텍스트입니다. curl의 경우 포트 80 HTTP는 HTTPS로 리다이렉트되지 않습니다." },
     ],
   },
   mr: {
@@ -1014,6 +1082,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>ध्वजासह देश.</strong> GeoIP मुळे साइट्स तुम्हाला कोणत्या देशातून जोडलेले समजतात हे कळते.",
       "<strong>नेटवर्क बदलल्यानंतर तुलना करा.</strong> Wi‑Fi आणि मोबाइल डेटा दरम्यान स्विच करून पेज रीलोड करा आणि पत्ता व देश बदलले का ते पहा.",
       "<strong>हलके पेज.</strong> संगणक आणि मोबाइलवर चालते आणि अनेक भाषांमध्ये उपलब्ध आहे.",
+      "<strong>टर्मिनलमधून curl.</strong> <code>curl http://ip.dmosk.net/</code> किंवा HTTPS — अतिरिक्त मार्कअप नसलेली एक ओळ IP.",
     ],
     howTitle: "तुमचा IP पत्ता कसा पाहावा",
     howSteps: [
@@ -1021,6 +1090,7 @@ const bodies: Record<Locale, SeoBody> = {
       "तुमचा सार्वजनिक IP आणि देश दिसेपर्यंत थांबा.",
       "पत्ता क्लिपबोर्डमध्ये ठेवण्यासाठी “कॉपी” दाबा.",
       "Wi‑Fi आणि मोबाइल डेटा दरम्यान स्विच करून पेज रीलोड करा आणि निकालाची तुलना करा.",
+      "किंवा टर्मिनलमध्ये <code>curl http://ip.dmosk.net/</code> चालवा — पत्ता साध्या मजकूरात येईल.",
     ],
     strongTitle: "सार्वजनिक IP म्हणजे काय आणि तो कसा सुरक्षित ठेवावा",
     strongLead:
@@ -1040,6 +1110,7 @@ const bodies: Record<Locale, SeoBody> = {
       "रिमोट अॅक्सेस, RDP आणि होस्टिंग पॅनेल सेट करण्यासाठी;",
       "नेटवर्क समस्या तपासण्यासाठी आणि प्रदात्याच्या सपोर्टशी संपर्कासाठी;",
       "प्रदेश-मर्यादित सेवांसाठी तुमचे स्थान तपासण्यासाठी.",
+      "curl ने टर्मिनलमधून जलद तपासणी;",
     ],
     faqTitle: "वारंवार विचारले जाणारे प्रश्न",
     faq: [
@@ -1052,6 +1123,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "IPv4 आणि IPv6 म्हणजे काय?", a: "ही प्रोटोकॉलची दोन आवृत्ती आहेत. IPv4 म्हणजे 203.0.113.7 सारखा आणि IPv6 म्हणजे 2001:db8::1 सारखा. कोणता दिसेल ते प्रदाता आणि नेटवर्कवर अवलंबून आहे." },
       { q: "ही सेवा मोफत आहे का?", a: "होय, मोफत आहे, साइन अप नको आणि तपासण्यांवर मर्यादा नाही." },
       { q: "माझा IP कोण पाहू शकतो?", a: "तुम्ही जोडलेली कोणतीही साइट किंवा सेवा त्या कनेक्शनचा सार्वजनिक पत्ता पाहते. हे पेज फक्त तोच पत्ता तुम्हाला दाखवते." },
+      { q: "curl ने IP पाहता येतो का?", a: "हो. <code>curl http://ip.dmosk.net/</code> किंवा <code>curl https://ip.dmosk.net/</code> चालवा — उत्तर फक्त साधा IP मजकूर असतो. curl साठी पोर्ट 80 वरील HTTP HTTPS कडे रीडायरेक्ट होत नाही." },
     ],
   },
   vi: {
@@ -1065,6 +1137,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>Quốc gia kèm cờ.</strong> Tra cứu GeoIP cho biết các trang web nghĩ bạn kết nối từ đâu.",
       "<strong>So sánh sau khi đổi mạng.</strong> Tải lại trang sau khi chuyển giữa Wi‑Fi và dữ liệu di động để xem địa chỉ và quốc gia có đổi không.",
       "<strong>Trang nhẹ.</strong> Chạy trên máy tính và điện thoại, có nhiều ngôn ngữ.",
+      "<strong>curl từ terminal.</strong> <code>curl http://ip.dmosk.net/</code> hoặc HTTPS — một dòng IP, không markup thừa.",
     ],
     howTitle: "Cách xem địa chỉ IP của bạn",
     howSteps: [
@@ -1072,6 +1145,7 @@ const bodies: Record<Locale, SeoBody> = {
       "Chờ IP công cộng và quốc gia của bạn hiện ra.",
       "Nhấn Sao chép để lưu địa chỉ vào bộ nhớ tạm.",
       "Chuyển giữa Wi‑Fi và dữ liệu di động rồi tải lại trang để so sánh kết quả.",
+      "Hoặc chạy <code>curl http://ip.dmosk.net/</code> trong terminal — địa chỉ trả về dạng văn bản thuần.",
     ],
     strongTitle: "IP công cộng là gì và cách bảo vệ",
     strongLead:
@@ -1091,6 +1165,7 @@ const bodies: Record<Locale, SeoBody> = {
       "thiết lập truy cập từ xa, RDP và bảng điều khiển hosting;",
       "chẩn đoán mạng và liên hệ hỗ trợ nhà mạng;",
       "kiểm tra vị trí cho các dịch vụ giới hạn theo khu vực.",
+      "kiểm tra nhanh từ terminal bằng curl;",
     ],
     faqTitle: "Câu hỏi thường gặp",
     faq: [
@@ -1103,6 +1178,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "IPv4 và IPv6 là gì?", a: "Là hai phiên bản của giao thức. IPv4 dạng 203.0.113.7, IPv6 dạng 2001:db8::1. Bạn thấy loại nào tùy nhà mạng và cấu hình mạng." },
       { q: "Dịch vụ có miễn phí không?", a: "Có, miễn phí, không cần đăng ký và không giới hạn số lần kiểm tra." },
       { q: "Ai có thể thấy địa chỉ IP của tôi?", a: "Mọi trang web hoặc dịch vụ bạn kết nối đều thấy địa chỉ công cộng của kết nối đó. Trang này chỉ hiển thị cùng địa chỉ cho bạn." },
+      { q: "Tôi có thể xem IP bằng curl không?", a: "Có. Chạy <code>curl http://ip.dmosk.net/</code> hoặc <code>curl https://ip.dmosk.net/</code> — phản hồi chỉ là IP dạng văn bản thuần. Với curl, HTTP cổng 80 không chuyển hướng sang HTTPS." },
     ],
   },
   ta: {
@@ -1116,6 +1192,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>கொடியுடன் நாடு.</strong> GeoIP மூலம் தளங்கள் உங்களை எந்த நாட்டிலிருந்து இணைந்ததாகக் கருதுகின்றன என்று தெரியும்.",
       "<strong>நெட்வொர்க் மாற்றத்திற்குப் பின் ஒப்பீடு.</strong> Wi‑Fi மற்றும் மொபைல் டேட்டா இடையே மாறிய பின் பக்கத்தை மீண்டும் ஏற்றி முகவரி, நாடு மாறுகிறதா என்று பாருங்கள்.",
       "<strong>இலகுவான பக்கம்.</strong> கணினி, மொபைலில் இயங்கும்; பல மொழிகளில் உள்ளது.",
+      "<strong>முனையத்திலிருந்து curl.</strong> <code>curl http://ip.dmosk.net/</code> அல்லது HTTPS — கூடுதல் மார்க்கப் இல்லாமல் ஒரு வரி IP.",
     ],
     howTitle: "உங்கள் IP முகவரியை எப்படி அறிவது",
     howSteps: [
@@ -1123,6 +1200,7 @@ const bodies: Record<Locale, SeoBody> = {
       "உங்கள் பொது IP மற்றும் நாடு தோன்றும் வரை காத்திருங்கள்.",
       "முகவரியை கிளிப்போர்டில் சேமிக்க “நகல்” அழுத்தவும்.",
       "Wi‑Fi மற்றும் மொபைல் டேட்டா இடையே மாறி பக்கத்தை மீண்டும் ஏற்றி முடிவை ஒப்பிடுங்கள்.",
+      "அல்லது முனையத்தில் <code>curl http://ip.dmosk.net/</code> இயக்கவும் — முகவரி சாதாரண உரையாக வரும்.",
     ],
     strongTitle: "பொது IP என்றால் என்ன, அதை எப்படிப் பாதுகாப்பது",
     strongLead:
@@ -1142,6 +1220,7 @@ const bodies: Record<Locale, SeoBody> = {
       "தொலைநிலை அணுகல், RDP, ஹோஸ்டிங் பேனல்களை அமைக்க;",
       "நெட்வொர்க் சிக்கல்களைக் கண்டறிய, சேவை வழங்குநர் ஆதரவைத் தொடர்புகொள்ள;",
       "பிராந்தியக் கட்டுப்பாடு உள்ள சேவைகளுக்கு உங்கள் இருப்பிடத்தைச் சரிபார்க்க.",
+      "curl மூலம் முனையத்தில் விரைவு சரிபார்ப்பு;",
     ],
     faqTitle: "அடிக்கடி கேட்கப்படும் கேள்விகள்",
     faq: [
@@ -1154,6 +1233,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "IPv4, IPv6 என்றால் என்ன?", a: "இவை நெறிமுறையின் இரண்டு பதிப்புகள். IPv4 203.0.113.7 போலவும், IPv6 2001:db8::1 போலவும் இருக்கும். எது தெரியும் என்பது வழங்குநர், நெட்வொர்க்கைப் பொறுத்தது." },
       { q: "இந்தச் சேவை இலவசமா?", a: "ஆம், இலவசம்; பதிவு தேவையில்லை; சோதனைகளுக்கு வரம்பு இல்லை." },
       { q: "என் IP-ஐ யார் பார்க்க முடியும்?", a: "நீங்கள் இணைக்கும் எந்தத் தளமும் சேவையும் அந்த இணைப்பின் பொது முகவரியைப் பார்க்கும். இந்தப் பக்கம் அதே முகவரியை உங்களுக்குக் காட்டும்." },
+      { q: "curl மூலம் IP பார்க்க முடியுமா?", a: "ஆம். <code>curl http://ip.dmosk.net/</code> அல்லது <code>curl https://ip.dmosk.net/</code> இயக்கவும் — பதில் வெறும் உரை IP மட்டும். curlக்கு போர்ட் 80 HTTP HTTPSக்கு திருப்பப்படாது." },
     ],
   },
   it: {
@@ -1167,6 +1247,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>Paese con bandiera.</strong> La ricerca GeoIP indica da dove i siti pensano che ti connetta.",
       "<strong>Confronta dopo un cambio di rete.</strong> Ricarica la pagina dopo essere passato da Wi‑Fi a dati mobili (o viceversa) per vedere se indirizzo e paese cambiano.",
       "<strong>Pagina leggera.</strong> Funziona su computer e smartphone ed è disponibile in molte lingue.",
+      "<strong>curl dal terminale.</strong> <code>curl http://ip.dmosk.net/</code> o HTTPS: una riga con l’IP, senza markup extra.",
     ],
     howTitle: "Come scoprire il tuo indirizzo IP",
     howSteps: [
@@ -1174,6 +1255,7 @@ const bodies: Record<Locale, SeoBody> = {
       "Attendi la comparsa del tuo IP pubblico e del paese.",
       "Premi Copia per salvare l'indirizzo negli appunti.",
       "Passa da Wi‑Fi a dati mobili (o viceversa) e ricarica la pagina per confrontare.",
+      "Oppure esegui <code>curl http://ip.dmosk.net/</code> nel terminale: l’indirizzo torna come testo semplice.",
     ],
     strongTitle: "Cos'è un IP pubblico e come proteggerlo",
     strongLead:
@@ -1193,6 +1275,7 @@ const bodies: Record<Locale, SeoBody> = {
       "configurare accesso remoto, RDP e pannelli di hosting;",
       "diagnostica di rete e contatto con l'assistenza del provider;",
       "controllare la posizione per servizi limitati per regione.",
+      "controllo rapido dal terminale con curl;",
     ],
     faqTitle: "Domande frequenti",
     faq: [
@@ -1205,6 +1288,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "Cosa sono IPv4 e IPv6?", a: "Sono due versioni del protocollo. IPv4 ha la forma 203.0.113.7 e IPv6 la forma 2001:db8::1. Quale vedi dipende dal provider e dalla rete." },
       { q: "Il servizio è gratuito?", a: "Sì, è gratuito, senza registrazione e senza limiti di controlli." },
       { q: "Chi può vedere il mio indirizzo IP?", a: "Qualsiasi sito o servizio a cui ti colleghi vede l'indirizzo pubblico di quella connessione. Questa pagina ti mostra semplicemente lo stesso indirizzo." },
+      { q: "Posso conoscere il mio IP con curl?", a: "Sì. Esegui <code>curl http://ip.dmosk.net/</code> o <code>curl https://ip.dmosk.net/</code>: la risposta è solo l’IP in testo. Con curl, HTTP sulla porta 80 non reindirizza a HTTPS." },
     ],
   },
   fa: {
@@ -1218,6 +1302,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>کشور همراه با پرچم.</strong> جست‌وجوی GeoIP نشان می‌دهد سایت‌ها فکر می‌کنند از کجا متصل شده‌اید.",
       "<strong>مقایسه پس از تغییر شبکه.</strong> پس از جابه‌جایی بین Wi‑Fi و دادهٔ تلفن همراه صفحه را دوباره بارگذاری کنید تا ببینید آدرس و کشور عوض شده‌اند یا نه.",
       "<strong>صفحه سبک.</strong> روی رایانه و موبایل کار می‌کند و به زبان‌های بسیاری در دسترس است.",
+      "<strong>curl از ترمینال.</strong> <code>curl http://ip.dmosk.net/</code> یا HTTPS — یک خط IP بدون نشانه‌گذاری اضافه.",
     ],
     howTitle: "چطور آدرس IP خود را ببینیم",
     howSteps: [
@@ -1225,6 +1310,7 @@ const bodies: Record<Locale, SeoBody> = {
       "منتظر نمایش IP عمومی و کشور خود بمانید.",
       "برای ذخیره آدرس در کلیپ‌بورد روی کپی بزنید.",
       "بین Wi‑Fi و دادهٔ تلفن همراه جابه‌جا شوید و صفحه را دوباره بارگذاری کنید تا نتیجه را مقایسه کنید.",
+      "یا در ترمینال <code>curl http://ip.dmosk.net/</code> را اجرا کنید — آدرس به‌صورت متن ساده برمی‌گردد.",
     ],
     strongTitle: "IP عمومی چیست و چگونه از آن محافظت کنیم",
     strongLead:
@@ -1244,6 +1330,7 @@ const bodies: Record<Locale, SeoBody> = {
       "راه‌اندازی دسترسی از راه دور، RDP و پنل‌های هاستینگ؛",
       "عیب‌یابی شبکه و تماس با پشتیبانی ارائه‌دهنده؛",
       "بررسی موقعیت برای سرویس‌هایی با محدودیت منطقه‌ای.",
+      "بررسی سریع از ترمینال با curl؛",
     ],
     faqTitle: "پرسش‌های متداول",
     faq: [
@@ -1256,6 +1343,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "IPv4 و IPv6 چیست؟", a: "دو نسخه از پروتکل هستند. IPv4 مانند 203.0.113.7 و IPv6 مانند 2001:db8::1 است. اینکه کدام را ببینید به ارائه‌دهنده و شبکه بستگی دارد." },
       { q: "آیا این سرویس رایگان است؟", a: "بله، رایگان است، ثبت‌نام ندارد و محدودیتی برای تعداد بررسی نیست." },
       { q: "چه کسی IP من را می‌بیند؟", a: "هر سایت یا سرویسی که به آن وصل می‌شوید آدرس عمومی همان اتصال را می‌بیند. این صفحه فقط همان آدرس را به شما نشان می‌دهد." },
+      { q: "آیا می‌توانم IP را با curl ببینم؟", a: "بله. <code>curl http://ip.dmosk.net/</code> یا <code>curl https://ip.dmosk.net/</code> را اجرا کنید — پاسخ فقط IP به‌صورت متن ساده است. برای curl، HTTP روی پورت ۸۰ به HTTPS هدایت نمی‌شود." },
     ],
   },
   tlh: {
@@ -1269,6 +1357,7 @@ const bodies: Record<Locale, SeoBody> = {
       "<strong>Sep 'ej Qob.</strong> GeoIP Sep yIlegh: jan website Dalegh 'e' vIlegh.",
       "<strong>network choHta' yIcha'.</strong> Wi‑Fi 'ej mobile data choHta', pagina yIchu'qa', IP Sep je yIlegh.",
       "<strong>Doch Dun.</strong> computerDaq 'ej mobileDaq tu'lu', Hol law' ghaj.",
+      "<strong>curl terminal.</strong> <code>curl http://ip.dmosk.net/</code> qoj HTTPS — IP wa' QIn.",
     ],
     howTitle: "chay' IP Daj yIlegh",
     howSteps: [
@@ -1276,6 +1365,7 @@ const bodies: Record<Locale, SeoBody> = {
       "IP Sep je lutu'lu' 'ej yIlegh.",
       "“qaw'” yIpuv, vaj IP clipboardDaq yIqaw'.",
       "Wi‑Fi 'ej mobile data yIchoH, pagina yIchu'qa', 'ej Qapmeyvam yIcha'.",
+      "qoj terminalDaq <code>curl http://ip.dmosk.net/</code> yIru' — IP QIn.",
     ],
     strongTitle: "nuq 'oH IP 'ej chay' yIpol",
     strongLead:
@@ -1295,6 +1385,7 @@ const bodies: Record<Locale, SeoBody> = {
       "remote Daq, RDP, 'ej hosting panel yIchenmoH;",
       "network Qagh yIlegh 'ej ngaS support yIja';",
       "Sep Daq yIlegh Sep chaw'bogh Qu' vaD.",
+      "curl terminal IP yIlegh;",
     ],
     faqTitle: "yaj 'e' yIqel",
     faq: [
@@ -1307,6 +1398,7 @@ const bodies: Record<Locale, SeoBody> = {
       { q: "nuq 'oH IPv4 'ej IPv6?", a: "cha' IP version. IPv4 203.0.113.7 'oH, IPv6 2001:db8::1 'oH. ngaS 'ej network ghajmey." },
       { q: "Qu'vam tlhab'a'?", a: "HIja', tlhab. register pagh 'ej legh mI' pagh." },
       { q: "'Iv IP wIj leghlaH?", a: "Hoch website pagh Qu' Dalegh IP publik. pagina IP'e' SoHvaD yIlegh neH." },
+      { q: "curl Dalo' IP?", a: "HIja'. <code>curl http://ip.dmosk.net/</code> qoj <code>curl https://ip.dmosk.net/</code> yIru' — IP ngIq QIn. curl, HTTP port 80 HTTPSDaq Ha'be'." },
     ],
   },
 };

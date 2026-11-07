@@ -54,9 +54,18 @@ function meApiPlugin(): Plugin {
       (typeof realStr === "string" && realStr.trim()) ||
       req.socket?.remoteAddress ||
       "127.0.0.1";
+    const ua = req.headers?.["user-agent"];
+    const uaStr = Array.isArray(ua) ? ua[0] : ua;
+    const curl = typeof uaStr === "string" && /curl\//i.test(uaStr);
     res.statusCode = 200;
-    res.setHeader("Content-Type", "application/json; charset=utf-8");
     res.setHeader("Cache-Control", "no-store");
+    if (curl) {
+      const plain = `${ip}\n`;
+      res.setHeader("Content-Type", "text/plain; charset=utf-8");
+      res.end(plain);
+      return;
+    }
+    res.setHeader("Content-Type", "application/json; charset=utf-8");
     res.end(
       JSON.stringify({
         ip,
